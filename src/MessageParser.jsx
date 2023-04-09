@@ -7,6 +7,10 @@ class MessageParser {
   
     parse(message) {
       console.log(message)
+      const lowerCase = message.toLowerCase()
+    if(lowerCase.includes("hello")){
+      this.actionProvider.greet();
+    }
     }
   }
   
